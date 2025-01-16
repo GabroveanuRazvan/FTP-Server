@@ -1,0 +1,14 @@
+services:
+  ftp_server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      network: host
+    container_name: file-transfer-server
+    network_mode: host
+    volumes:
+      - ./server_data:/server_data
+    environment:
+      - CONFIG_PATH=/server_data/config.json
+    stdin_open: true
+    tty: true

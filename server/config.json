@@ -1,0 +1,11 @@
+{
+  "command_address":"0.0.0.0:7878",
+  "data_dir_path":"./server_data/data",
+  "serialized_lists_path":"./server_data/serialized_lists",
+  "white_list_file_name":"white_list.json",
+  "ban_list_file_name":"ban_list.json",
+  "server_num_threads": 10,
+  "buffer_size": 8192,
+  "first_port": 50000,
+  "last_port": 50100
+}
